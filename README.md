@@ -1,5 +1,3 @@
-# Lost_and_Found
-A centralized, student-built web platform for NSUT to report, search, and reclaim lost items across campus—replacing fragmented WhatsApp groups with a single, searchable solution.
 # 🎒 NSUT Lost & Found
 
 > A centralized, community-driven web platform to report, search, and reclaim misplaced items across the Netaji Subhas University of Technology (NSUT) campus.
