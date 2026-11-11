@@ -1,0 +1,40 @@
+[Finder] Deposits item at Admin Desk (e.g., Student Affairs / Security)
+   │
+   ▼
+[Admin Desk] Creates Found Record:
+   ├── Public Info (Category, Date, General Location)
+   └── Hidden "Verification Attributes" (Serial number, stickers, unique scratches, contents)
+   │
+   ▼
+[Portal] Public feed displays found item with redacted details
+   │
+   ▼
+[Student] Logs in via NSUT Google Workspace (@nsut.ac.in)
+   └── Submits "Lost Item Report" with detailed identifiers
+   │
+   ▼
+[Matching Engine] Evaluates similarity score (Lost Report vs. Found Records)
+   │
+   ├── Score >= Threshold ──> Student notified of potential match
+   │                              │
+   │                              ▼
+   │                        Student reviews match & clicks "Generate Claim Request"
+   │                        (Answers blind verification questions)
+   │                              │
+   │                              ▼
+   │                        [Admin Dashboard] Reviews Claim dossier:
+   │                        Student inputs vs. Hidden ground-truth
+   │                              │
+   │                     ┌────────┴────────┐
+   │                     ▼                 ▼
+   │                 [Reject]          [Accept]
+   │                     │                 │
+   │            Reason logged,             Generates Unique Claim Pass (Token + QR)
+   │            item relisted              & emails student
+   │                                       │
+   │                                       ▼
+   │                            Physical Handover at Admin Block:
+   │                            - Scan Claim QR
+   │                            - Verify Physical NSUT ID
+   │                            - Digital signature / Photo confirmation
+   │                            - Status -> CLAIMED
